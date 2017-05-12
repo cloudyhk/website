@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>CloudyHK.com</title>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+<style type="text/css">
+a:link    {color:green; background-color:transparent; text-decoration:none}
+a:visited {color:green; background-color:transparent; text-decoration:none}
+a:hover   {color:blue; background-color:transparent; text-decoration:underline}
+a:active  {color:blue; background-color:transparent; text-decoration:underline}
+header{
+    	border:0px solid white;
+    	margin:5px;margin-bottom:5px;padding:5px;
+    	color:green;
+	background-color:while;
+	}
+footer {
+    	border:0px solid white;
+    	margin:5px;margin-bottom:5px;padding:5px;
+    	color:green;
+	background-color:white;
+	}
+body {
+	background-color:white;
+	text-align:center;
+	margin:auto;
+	font-family:Verdana,sans-serif;font-size:0.8em;
+	}
+figure {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	text-align:center;
+	display: block;
+	}
+img {
+	margin: 0;
+	padding: 0;
+	height:188px;
+	width:250px;
+	}
+#slide_hobart_p1{
+	height:188px;
+	width:250px;
+	position:relative;
+	}
+#slide_hobart_p2{
+	height:188px;
+	width:250px;
+	position:relative;
+	}
+#slide_hobart_p3{
+	height:188px;
+	width:250px;
+	position:relative;
+	}
+#slide_hobart_p4{
+	height:188px;
+	width:250px;
+	position:relative;
+	}
+#slide_hobart_p5{
+	height:188px;
+	width:250px;
+	position:relative;
+	}
+#slide_hobart_p6{
+	height:188px;
+	width:250px;
+	position:relative;
+	}
+#slide_hobart_p7{
+	height:188px;
+	width:250px;
+	position:relative;
+	}
+#slide_hobart_p8{
+	height:188px;
+	width:250px;
+	position:relative;
+	}
+#slide_hobart_p9{
+	height:188px;
+	width:250px;
+	position:relative;
+	}
+</style>
+
+<script type="text/javascript">
+var pictureURL = "https://s3-ap-southeast-1.amazonaws.com/web.cloudyhk.com/index/"
+var slideimages = new Array() // create new array to preload images
+var imagesnumhobart = 11
+var slideimagesspeed = 3000 // every 3 seconds to change images
+//variable that will increment through the images
+var step=0
+var imgarrnum=10
+function addihobartimages(){
+var arr_count = 0;
+var pic_num = 1;
+do {
+slideimages[arr_count] = new Image()
+slideimages[arr_count].src = pictureURL + pic_num + ".jpg"
+    pic_num++;
+    arr_count++;
+}
+while (arr_count < imagesnumhobart);
+}
+function slideit1(){
+ //if browser does not support the image object, exit.
+ if (!document.images)
+  return
+ document.getElementById('slide_hobart_p1').src = slideimages[step].src
+ if (step<imgarrnum)
+  step++
+ else
+  step=0
+ //call function "slideit()" every 2.5 seconds
+ setTimeout("slideit1()", slideimagesspeed)
+}
+function slideit2(){
+ //if browser does not support the image object, exit.
+ if (!document.images)
+  return
+ document.getElementById('slide_hobart_p2').src = slideimages[step].src
+ if (step<imgarrnum)
+  step++
+ else
+  step=0
+ //call function "slideit1()" every 2.5 seconds
+ setTimeout("slideit2()", slideimagesspeed)
+}
+function slideit3(){
+ //if browser does not support the image object, exit.
+ if (!document.images)
+  return
+ document.getElementById('slide_hobart_p3').src = slideimages[step].src
+ if (step<imgarrnum)
+  step++
+ else
+  step=0
+ //call function "slideit()" every 2.5 seconds
+ setTimeout("slideit3()", slideimagesspeed)
+}
+function slideit4(){
+ //if browser does not support the image object, exit.
+ if (!document.images)
+  return
+ document.getElementById('slide_hobart_p4').src = slideimages[step].src
+ if (step<imgarrnum)
+  step++
+ else
+  step=0
+ //call function "slideit()" every 2.5 seconds
+ setTimeout("slideit4()", slideimagesspeed)
+}
+function slideit5(){
+ //if browser does not support the image object, exit.
+ if (!document.images)
+  return
+ document.getElementById('slide_hobart_p5').src = slideimages[step].src
+ if (step<imgarrnum)
+  step++
+ else
+  step=0
+ //call function "slideit()" every 2.5 seconds
+ //setTimeout("slideit5()", slideimagesspeed)
+}
+function slideit6(){
+ //if browser does not support the image object, exit.
+ if (!document.images)
+  return
+ document.getElementById('slide_hobart_p6').src = slideimages[step].src
+ if (step<imgarrnum)
+  step++
+ else
+  step=0
+ //call function "slideit()" every 2.5 seconds
+ setTimeout("slideit6()", slideimagesspeed)
+}
+function slideit7(){
+ //if browser does not support the image object, exit.
+ if (!document.images)
+  return
+ document.getElementById('slide_hobart_p7').src = slideimages[step].src
+ if (step<imgarrnum)
+  step++
+ else
+  step=0
+ //call function "slideit()" every 2.5 seconds
+ setTimeout("slideit7()", slideimagesspeed)
+}
+function slideit8(){
+ //if browser does not support the image object, exit.
+ if (!document.images)
+  return
+ document.getElementById('slide_hobart_p8').src = slideimages[step].src
+ if (step<imgarrnum)
+  step++
+ else
+  step=0
+ //call function "slideit()" every 2.5 seconds
+ setTimeout("slideit8()", slideimagesspeed)
+}
+function slideit9(){
+ //if browser does not support the image object, exit.
+ if (!document.images)
+  return
+ document.getElementById('slide_hobart_p9').src = slideimages[step].src
+ if (step<imgarrnum)
+  step++
+ else
+  step=0
+ //call function "slideit()" every 2.5 seconds
+ setTimeout("slideit9()", slideimagesspeed)
+}
+</script>
+
+<header>
+  <h1><a href="home.html"></a></h1>
+  <meta http-equiv="refresh" content="10;url=.\home.html" />
+</header>
+
+<body>
+<script>
+addihobartimages()
+</script>
+
+<figure role="group">
+  <figure>
+	<a href="home.html">
+	<img src=pictureURL+"1.jpg" id="slide_hobart_p1"/>
+	<img src=pictureURL+"2.jpg" id="slide_hobart_p2"/>
+	<img src=pictureURL+"3.jpg" id="slide_hobart_p3"/>
+	</a>
+	<script>
+	slideit1()
+	slideit2()
+	slideit3()
+	</script>
+  </figure>
+  <figure>
+	<a href="home.html">
+	<img src=pictureURL+"4.jpg" id="slide_hobart_p4"/>
+	<img src=pictureURL+"5.jpg" id="slide_hobart_p5"/>
+	<img src=pictureURL+"6.jpg" id="slide_hobart_p6"/>
+	</a>
+	<script>
+	slideit4()
+	slideit5()
+	slideit6()
+	</script>
+  </figure>
+  <figure>
+	<a href="home.html">
+	<img src=pictureURL+"7.jpg" id="slide_hobart_p7"/>
+	<img src=pictureURL+"8.jpg" id="slide_hobart_p8"/>
+	<img src=pictureURL+"9.jpg" id="slide_hobart_p9"/>
+	</a>
+	<script>
+	slideit7()
+	slideit8()
+	slideit9()
+	</script>
+  </figure>
+</figure>
+</body>
+<p></p>
+<footer>
+  <p>Posted by: DC, Contact information: <a href="mailto:cloudyhk@outlook.com">
+  cloudyhk@outlook.com</a>.</p>
+<p>2017 CloudyHK.com. All rights reserved.</p>
+</footer>
+
+</html>
+
